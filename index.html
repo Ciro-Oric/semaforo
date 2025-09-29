@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semaforo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="semaforo">
-        <div class="ledVermelho"> </div>
-        <div class="ledAmarelo"></div>
-        <div class="ledVerde"></div>
+    
+    <div class="Enunciado">
+        <h1> APERTE ASSIM QUE FICAR VERDE</h1>
     </div>
+    <div class="wall"></div>
+
+    <div class="semaforo">
+        <div id="vermelho" class="ledVermelho"> </div>
+        <div id="laranja" class="ledLaranja"> </div>
+        <div id="amarelo" class="ledAmarelo"></div>
+        <div id="verde" class="ledVerde"></div>
+        <div id="vermelho" class="ledVermelho"> </div>
+        <div id="laranja" class="ledLaranja"> </div>
+        <div id="amarelo" class="ledAmarelo"></div>
+        <div id="verde" class="ledVerde"></div>
+        <div id="vermelho" class="ledVermelho"> </div>
+        <div id="laranja" class="ledLaranja"> </div>
+        <div id="amarelo" class="ledAmarelo"></div>
+        <div id="verde" class="ledVerde"></div>
+    </div>
+
+    <div class="wall"></div>
+
+    <div class="btn">
+        <button id="startButton">START</button>
+    </div>
+
+    <div class="timer" id="timerDisplay">
+        
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

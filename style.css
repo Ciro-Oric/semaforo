@@ -1,10 +1,90 @@
-body {
-    align-items: center;
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    background-image: url(run.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    
+
+}
+
+.Enunciado {
     display: flex;
-    background-color: rgb(63, 61, 61);
+    border-radius: 10px;
+    background-color: rgba(207, 207, 207, 0.568);
+    
+}
+
+.wall {
+    height: 50px;
+}
+
+.semaforo {
+    display: grid; 
+    grid-template-columns: repeat(4, 100px); 
+    grid-gap: 20px; 
+    background-color: rgb(42, 47, 49); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.ledVermelho, .ledAmarelo, .ledVerde, .ledLaranja {
+    background-color: lightgray; 
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-width: 1px;
 }
 
 .ledVermelho {
-    background-color: red;
-    border-radius: 50%;
+    background-color: rgba(252, 8, 8, 0.123); 
+}
+
+.ledLaranja {
+    background-color: rgba(255, 166, 0, 0.164);
+}
+
+.ledAmarelo {
+    background-color: rgba(255, 255, 0, 0.151); 
+}
+
+.ledVerde {
+    background-color: rgba(0, 128, 0, 0.096); 
+}
+
+.btn button {
+            width: 150px;
+            height: 150px;
+            background-color: #fc0b0b; /* Cor do botão */
+            color: white; /* Cor do texto */
+            border: none;
+            border-radius: 50%; /* Deixa o botão redondo */
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            user-select: none; /* Evita seleção de texto */
+        }
+
+.btn button:hover {
+    background-color: #45a049;
+}
+
+.btn button:active {
+    transform: scale(0.95); /* Efeito ao clicar */    
+}
+
+.timer time {
+    
 }
